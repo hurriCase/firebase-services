@@ -7,7 +7,7 @@ namespace FirebaseServices.Runtime.Config
     /// <summary>
     /// Provides remote configuration management using Firebase Remote Config.
     /// </summary>
-    [UsedImplicitly]
+    [PublicAPI]
     public interface IRemoteConfigService
     {
         /// <summary>
@@ -15,7 +15,6 @@ namespace FirebaseServices.Runtime.Config
         /// </summary>
         /// <param name="token">Cancellation token to cancel the initialization process.</param>
         /// <returns>A task representing the initialization operation.</returns>
-        [UsedImplicitly]
         UniTask InitAsync(CancellationToken token);
 
         /// <summary>
@@ -25,7 +24,6 @@ namespace FirebaseServices.Runtime.Config
         /// <param name="value">When this method returns,
         /// contains the string value if the key exists and has a valid value otherwise, null.</param>
         /// <returns>True if the key exists and has a valid string value; otherwise, false.</returns>
-        [UsedImplicitly]
         bool TryGetString(string key, out string value);
     }
 }

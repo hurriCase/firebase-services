@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace FirebaseServices.Runtime.Config
 {
-    [UsedImplicitly]
+    [PublicAPI]
     public sealed class RemoteConfigService : IRemoteConfigService
     {
         private FirebaseRemoteConfig _remoteConfig;

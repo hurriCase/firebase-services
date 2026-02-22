@@ -9,13 +9,12 @@ namespace FirebaseServices.Runtime.Base
     /// <summary>
     /// Bootstrap class for Firebase.
     /// </summary>
-    [UsedImplicitly]
+    [PublicAPI]
     public static class FirebaseBootstrap
     {
         /// <summary>
         /// Initializes Firebase asynchronously.
         /// </summary>
-        [UsedImplicitly]
         public static async UniTask InitAsync()
         {
             try

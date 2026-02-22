@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 
 namespace FirebaseServices.Runtime.Analytics
 {
-    [UsedImplicitly]
+    [PublicAPI]
     public sealed class FirebaseAnalyticsService
     {
         public void SendEvent(string eventName)
