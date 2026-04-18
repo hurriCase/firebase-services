@@ -49,7 +49,7 @@ namespace FirebaseServices.Runtime.Config
         public bool TryGetString(string key, out string value)
         {
             value = _remoteConfig.GetValue(key).StringValue;
-            return string.IsNullOrEmpty(value) is false;
+            return !string.IsNullOrEmpty(value);
         }
     }
 }
